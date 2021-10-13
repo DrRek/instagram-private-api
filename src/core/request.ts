@@ -181,7 +181,11 @@ export class Request {
   }
 
   public getDefaultHeaders() {
+    let premises = {};
+    if (this.client.state.user_id_mongo) premises['user-id-mongo'] = this.client.state.user_id_mongo;
+
     return {
+      ...premises,
       'User-Agent': this.client.state.appUserAgent,
       'X-Ads-Opt-Out': this.client.state.adsOptOut ? '1' : '0',
       // needed? 'X-DEVICE-ID': this.client.state.uuid,
