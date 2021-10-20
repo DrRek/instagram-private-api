@@ -56,7 +56,8 @@
     "ts-custom-error": "^2.2.2",
     "ts-xor": "^1.0.6",
     "url-regex-safe": "^1.0.2",
-    "utility-types": "^3.10.0"
+    "utility-types": "^3.10.0",
+    "rimraf": "^2.7.1"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.26",
@@ -70,7 +71,6 @@
     "json-ts": "^1.6.4",
     "prettier": "^1.19.1",
     "pretty-quick": "^1.10.0",
-    "rimraf": "^2.7.1",
     "ts-node": "^8.1.0",
     "tslint": "^5.16.0",
     "typedoc": "^0.21.4",
