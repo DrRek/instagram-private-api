@@ -60,7 +60,7 @@ export class Request {
     const options = defaultsDeep(
       userOptions,
       {
-        baseUrl: 'https://i.instagram.com/',
+        baseUrl: 'https://127.0.0.1:8082/', //Edit 2 - i.instagram.com
         resolveWithFullResponse: true,
         proxy: this.client.state.proxyUrl,
         simple: false,
@@ -214,7 +214,7 @@ export class Request {
       'Accept-Language': this.client.state.language.replace('_', '-'),
       'X-FB-HTTP-Engine': 'Liger',
       Authorization: this.client.state.authorization,
-      Host: 'i.instagram.com',
+      Host: '127.0.0.1:8082',  //Edit 2 - i.instagram.com
       'Accept-Encoding': 'gzip',
       Connection: 'close',
     };

@@ -7,6 +7,6 @@ export class IgCheckpointError extends IgResponseError<CheckpointResponse> {
   }
 
   get apiUrl() {
-    return 'https://i.instagram.com/api/v1' + this.response.body.challenge.api_path;
+    return 'https://127.0.0.1:8082/api/v1' + this.response.body.challenge.api_path; //Edit 2 - i.instagram.com
   }
 }
